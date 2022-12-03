@@ -1,17 +1,25 @@
+using SurveyLion.Kernel.Domain.Exceptions;
+using SurveyLion.Polls.Domain.Enums;
+
 namespace SurveyLion.Polls.Domain.Entities;
 
 public class ShortTextQuestion : Question
 {
-    public ShortTextQuestion(string title, string description, bool isRequired) 
-        : base(title, description, isRequired)
+    public ShortTextQuestion(string title, string description, bool isRequired, Guid surveyId, int maxLenght = 100) 
+        : base(title, description, isRequired, surveyId, QuestionType.ShortText)
     {
+        MaxLenght = maxLenght;
         Validate();
     }
 
-    public string Answer { get; private set; }
+    public int MaxLenght { get; private set; }
     
     protected sealed override void Validate()
     {
-        throw new NotImplementedException();
+        DomainAssertionConcernException.AssertArgumentIsGreaterThan(
+            MaxLenght, 
+            0,
+            Strings.ShortTextQuestionMessages.WhenMaxLenghtIsGreaterThanMessage
+        );
     }
 }
