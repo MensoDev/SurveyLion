@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyLion.Polls.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyLion.Polls.Tests", "tests\SurveyLion.Polls.Tests\SurveyLion.Polls.Tests.csproj", "{F5F45D58-E650-4E56-BEFB-2E94EE3E896D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Laboratory", "Laboratory", "{BF10ABA5-B0F6-4A1E-AEAE-0E43A86733B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyLion.Presentation.Terminal", "tests\SurveyLion.Presentation.Terminal\SurveyLion.Presentation.Terminal.csproj", "{357E5CB8-24AC-4B62-9F03-904EECB2F740}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +38,8 @@ Global
 		{09A9925C-D0EA-43CE-8E96-047533FEBF12} = {D6D862E6-F30F-4F22-AD45-13A819C54A96}
 		{ED4ECA89-9E11-4125-9698-00FDB4BC90D4} = {D6D862E6-F30F-4F22-AD45-13A819C54A96}
 		{F5F45D58-E650-4E56-BEFB-2E94EE3E896D} = {D6D862E6-F30F-4F22-AD45-13A819C54A96}
+		{BF10ABA5-B0F6-4A1E-AEAE-0E43A86733B1} = {D0CB965E-BE53-4733-87E2-8CB6BDD72AFD}
+		{357E5CB8-24AC-4B62-9F03-904EECB2F740} = {BF10ABA5-B0F6-4A1E-AEAE-0E43A86733B1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{703E84A9-2680-4AD5-8B27-7F14E7CDD385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -56,5 +62,9 @@ Global
 		{F5F45D58-E650-4E56-BEFB-2E94EE3E896D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5F45D58-E650-4E56-BEFB-2E94EE3E896D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5F45D58-E650-4E56-BEFB-2E94EE3E896D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357E5CB8-24AC-4B62-9F03-904EECB2F740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357E5CB8-24AC-4B62-9F03-904EECB2F740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357E5CB8-24AC-4B62-9F03-904EECB2F740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357E5CB8-24AC-4B62-9F03-904EECB2F740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
