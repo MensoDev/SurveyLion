@@ -19,7 +19,7 @@ public sealed class ShortTextQuestionController : IQuestionController
             placeholder: _shortTextQuestion.Description, 
             validators: validators);
 
-        return new ShortTextAnswer(surveySession, _shortTextQuestion, text);
+        return _shortTextQuestion.AnswerQuestion(surveySession, text);
     }
 
     public static ShortTextQuestionController CreateController(ShortTextQuestion question)

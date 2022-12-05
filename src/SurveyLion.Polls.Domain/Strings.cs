@@ -16,12 +16,24 @@ public static class Strings
         public const string WhenMaxLenghtIsGreaterThanMessage = "MaxLenght cannot be less than zero";
     }
     
+    public static class NumberQuestionMessages
+    {
+        public const string NumberMustBeGreaterThanMessage = "The number must be greater than {0}";
+        public const string NumberMustBeLessThanMessage = "The number must be less than {0}";
+    }
+    
     public static class AnswerMessages 
     {
         public const string QuestionIdIsRequiredMessage = "QuestionId is required.";
         public const string TextIsRequiredMessage = "Text is required.";
         public const string TextIsLessThanMessage = "Text cannot be less than {0}";
+        public const string TextIsGreaterThanMessage = "Text cannot be greater than {0}";
         public const string SurveySessionIsRequiredMessage = "SurveySession is required.";
+    }
+    
+    public static class NumberAnswerMessages
+    {
+        public const string NumberIsRequiredMessage = "Number is required.";
     }
     
     public static class SurveyMessages 
